@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leaflet Map + Overpass API</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+    </head>
+
+    <body>
+        <div id="layout">
+            <div id="sidebar-controls">
+                <div class="sidebar-control">
+                    <button href="#" class="button" id="btn-location">
+                        <i class="fas fa-search-location"></i>&nbsp;Location
+                    </button>
+                </div>
+
+                <div class="sidebar-control">
+                    <button href="#" class="button" id="btn-pois">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;Update POIs
+                    </button>
+                </div>
+            </div>
+
+            <div id="map-container" class="map-container"></div>
+        </div>
+        <script src="vendor/osmtogeojson.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

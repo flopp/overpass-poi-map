@@ -1,0 +1,55 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+}
+
+#layout {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.map-container {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.properties dt {
+    font-weight: bold;
+}
+
+.properties dd {
+    margin-left: 1em;
+}
+
+#sidebar-controls {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0;
+    z-index: 30;
+    overflow: hidden;
+}
+
+.sidebar-control {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.sidebar-control button {
+    display: block;
+}
